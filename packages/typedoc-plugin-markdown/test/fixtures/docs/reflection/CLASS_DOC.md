@@ -1,3 +1,0 @@
-> Class Documentation
-
-Document content

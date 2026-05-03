@@ -1,3 +1,0 @@
-> Type Documentation
-
-Document content

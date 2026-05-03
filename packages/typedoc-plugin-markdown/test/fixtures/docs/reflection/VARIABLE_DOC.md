@@ -1,3 +1,0 @@
-> Variable Documentation
-
-Document content

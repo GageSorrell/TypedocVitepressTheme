@@ -1,31 +1,15 @@
 {
+  "name": "@sorrell/typedoc-vitepress-theme-monorepo",
   "private": true,
+  "type": "module",
   "workspaces": [
-    "packages/typedoc-plugin-markdown",
-    "packages/typedoc-plugin-remark",
-    "packages/typedoc-plugin-frontmatter",
-    "packages/typedoc-github-wiki-theme",
-    "packages/typedoc-gitlab-wiki-theme",
-    "packages/typedoc-vitepress-theme",
-    "packages/typedoc-docusaurus-theme",
-    "packages/docusaurus-plugin-typedoc",
-    "devtools/packages/*"
+    "Package",
+    "Script/packages/*"
   ],
   "scripts": {
-    "docs": "tsx ./devtools/scripts/generate-readmes.ts && node ./devtools/scripts/tocs.mjs",
-    "devdocs": "npm run build --workspace typedoc-plugin-markdown && typedoc",
-    "build-all": "npm run build --workspaces --if-present",
-    "test-all": "npm run test --workspaces --if-present",
-    "test-and-update-all": "npm run test:update --workspaces --if-present",
-    "lint-all": "npm run lint --workspaces --if-present",
-    "prerelease": "npm run build-all",
-    "release": "npx changeset publish",
-    "prepare": "husky"
+    "build:all": "npm run build --workspaces --if-present"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.30.0",
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
     "@devtools/helpers": "workspace:*",
     "@devtools/prebuild-options": "workspace:*",
     "@devtools/testing": "workspace:*",
@@ -38,7 +22,6 @@
     "eslint": "^10.2.0",
     "fs-extra": "^11.3.4",
     "glob": "^13.0.6",
-    "husky": "^9.1.7",
     "jest-diff": "^30.3.0",
     "markdownlint": "0.40.0",
     "mocha": "^11.7.5",
@@ -50,9 +33,11 @@
     "remark-insert-headings": "^0.0.0",
     "remark-mdx": "^3.1.1",
     "remark-toc": "^9.0.0",
+    "shx": "^0.4.0",
     "to-vfile": "^8.0.0",
     "ts-json-schema-generator": "2.4.0",
     "ts-morph": "^28.0.0",
+    "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.16",
     "tsx": "^4.21.0",
     "typedoc": "0.28.19",

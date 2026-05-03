@@ -1,9 +1,0 @@
-# Type Alias: PrimitiveType
-
-```ts
-type PrimitiveType = boolean;
-```
-
-Defined in: [types.ts:1](http://source-url)
-
-Comments for PrimitiveType

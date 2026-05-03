@@ -1,3 +1,0 @@
-> Function Documentation
-
-Document content

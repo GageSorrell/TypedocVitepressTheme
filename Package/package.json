@@ -1,0 +1,49 @@
+{
+  "name": "@sorrell/typedoc-vitepress-theme",
+  "version": "1.1.2",
+  "description": "Generates TypeDoc Markdown output for VitePress, with support for versioning.",
+  "bin": {
+    "typedoc-vitepress-versioned": "./dist/bin/versioned.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "type": "module",
+  "files": [
+    "dist/",
+    "./package.json",
+    "./ReadMe.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/typedoc2md/typedoc-plugin-markdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typedoc2md/typedoc-plugin-markdown.git",
+    "directory": "packages/typedoc-vitepress-theme"
+  },
+  "homepage": "https://typedoc-plugin-markdown.org/plugins/vitepress",
+  "author": "Thomas Grey",
+  "scripts": {
+    "lint": "eslint ./src",
+    "prebuild": "rimraf dist && cross-env NODE_OPTIONS=\"--trace-uncaught --trace-warnings --enable-source-maps\" ts-node --skipProject ../Script/packages/prebuild-options/cli.ts",
+    "build": "tsc -p ./tsconfig.json",
+    "build-and-test": "npm run build && npm run test",
+    "pretest": "tsx ./test/scripts/prepare.ts",
+    "test": "mocha --config ./mocha.config.json",
+    "test:update": "npm run build && rimraf ./test/__snapshots__ && npm test"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vitepress",
+    "vuepress",
+    "typedoc"
+  ],
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "typedoc-plugin-markdown": "^4.11.0"
+  }
+}

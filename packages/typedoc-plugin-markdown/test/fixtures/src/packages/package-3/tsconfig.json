@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "skipLibCheck": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "ignoreDeprecations": "6.0"
-  },
-  "include": ["**/*.ts"]
-}

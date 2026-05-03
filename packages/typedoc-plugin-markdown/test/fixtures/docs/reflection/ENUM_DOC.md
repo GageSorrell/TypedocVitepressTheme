@@ -1,3 +1,0 @@
-> Enum Documentation
-
-Document content

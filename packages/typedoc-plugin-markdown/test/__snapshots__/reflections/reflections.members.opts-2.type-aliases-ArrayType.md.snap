@@ -1,9 +1,0 @@
-# Type Alias: ArrayType
-
-```ts
-type ArrayType = string[];
-```
-
-Defined in: [types.ts:1](http://source-url)
-
-Comments for ArrayType

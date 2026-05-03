@@ -1,7 +1,0 @@
-# Type Alias: IndexAccessType
-
-> **IndexAccessType** = [`ArrayOfObjectsType`](ArrayOfObjectsType.md)\[`number`\]
-
-Defined in: [types.ts:1](http://source-url)
-
-Comments for IndexAccessType

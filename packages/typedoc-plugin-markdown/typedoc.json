@@ -1,7 +1,0 @@
-{
-  "entryPoints": ["./src/public-api.ts"],
-  "exclude": ["./src/public-api.ts"],
-  "categoryOrder": ["File", "Display", "Utility", "Functions", "Locales"],
-  "projectDocuments": ["./internal-docs/test-and-validation.md"],
-  "readme": "./internal-docs/introduction.md"
-}
