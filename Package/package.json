@@ -15,15 +15,19 @@
     "./ReadMe.md"
   ],
   "bugs": {
-    "url": "https://github.com/typedoc2md/typedoc-plugin-markdown/issues"
+    "url": "https://github.com/GageSorrell/TypedocVitepressTheme/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/typedoc2md/typedoc-plugin-markdown.git",
-    "directory": "packages/typedoc-vitepress-theme"
+    "url": "git+https://github.com/GageSorrell/TypedocVitepressTheme.git",
+    "directory": "Package"
   },
-  "homepage": "https://typedoc-plugin-markdown.org/plugins/vitepress",
-  "author": "Thomas Grey",
+  "homepage": "https://github.com/GageSorrell/TypedocVitepressTheme#ReadMe",
+    "author": {
+    "name": "Gage Sorrell",
+    "email": "gage@sorrell.sh",
+    "url": "https://github.com/GageSorrell"
+  },
   "scripts": {
     "lint": "eslint ./src",
     "prebuild": "rimraf dist && cross-env NODE_OPTIONS=\"--trace-uncaught --trace-warnings --enable-source-maps\" ts-node --skipProject ../Script/packages/prebuild-options/cli.ts",
