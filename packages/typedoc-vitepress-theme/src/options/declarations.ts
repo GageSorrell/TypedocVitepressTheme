@@ -56,3 +56,9 @@ export const sidebar = {
   type: ParameterType.Mixed,
   defaultValue: DEFAULT_SIDEBAR_OPTIONS,
 };
+
+export const versions = {
+    help: "Configures versioned VitePress documentation generation from git tags.",
+    type: ParameterType.Mixed,
+    defaultValue: undefined
+};

@@ -1,7 +1,10 @@
 {
-  "name": "typedoc-vitepress-theme",
+  "name": "@sorrell/typedoc-vitepress-theme",
   "version": "1.1.2",
-  "description": "Generates TypeDoc Markdown output for VitePress.",
+  "description": "Generates TypeDoc Markdown output for VitePress, with support for versioning.",
+  "bin": {
+    "typedoc-vitepress-versioned": "./dist/bin/versioned.js"
+  },
   "exports": {
     ".": "./dist/index.js"
   },
